@@ -1,0 +1,40 @@
+{
+  "meeting_id": "string",
+  "meeting_metadata": {
+    "title": "string",
+    "date": "YYYY-MM-DD",
+    "duration_minutes": "number",
+    "participants": ["string"]
+  },
+  "decisions": [
+    {
+      "decision_id": "string",
+      "description": "string",
+      "owner": "string | null",
+      "deadline": "YYYY-MM-DD | null",
+      "confidence": "number (0.0 - 1.0)",
+      "abstained": "boolean"
+    }
+  ],
+  "action_items": [
+    {
+      "action_id": "string",
+      "task": "string",
+      "owner": "string | null",
+      "deadline": "YYYY-MM-DD | null",
+      "blockers": ["string"],
+      "confidence": "number (0.0 - 1.0)",
+      "abstained": "boolean"
+    }
+  ],
+  "human_review": {
+    "reviewed": "boolean",
+    "corrections": [
+      {
+        "field": "string",
+        "original_value": "string",
+        "corrected_value": "string"
+      }
+    ]
+  }
+}
